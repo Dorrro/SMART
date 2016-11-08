@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace SMART.Home.Controller
+namespace SMART.Sites.Home.Controllers
 {
-    public class HomeController : Microsoft.AspNetCore.Mvc.Controller
+    public class HomeController : Controller
     {
-        // GET: /<controller>/
+        // GET: /Home/
         public IActionResult Index()
         {
             return View("Index");

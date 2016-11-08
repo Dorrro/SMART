@@ -9,11 +9,12 @@ namespace SMART
         {
         }
 
-        public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
+        public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context,
+            IEnumerable<string> viewLocations)
         {
             return new[]
             {
-                "/{1}/Views/{0}.cshtml"
+                "Sites/{1}/Views/{0}.cshtml"
             };
         }
     }
